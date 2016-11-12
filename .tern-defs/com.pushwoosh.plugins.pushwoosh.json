@@ -1,0 +1,12 @@
+{
+    "!name": "com.pushwoosh.plugins.pushwoosh",
+    "!define": {
+        "!modules": {
+            "PushNotification": {}
+        }
+    },
+    "!plugin-version": "4.1.1",
+    "plugins": {
+        "pushNotification": "!modules.PushNotification"
+    }
+}

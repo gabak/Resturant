@@ -1,0 +1,10 @@
+{
+    "!name": "cordova-plugin-datepicker",
+    "!define": {
+        "!modules": {
+            "DatePicker": {}
+        }
+    },
+    "!plugin-version": "0.9.3",
+    "datePicker": "!modules.DatePicker"
+}

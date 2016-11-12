@@ -1,0 +1,76 @@
+/* Empty. Add your own CSS if you like */
+
+.samdav h2 {
+   margin-top: 30px !important;
+    font-size: 20px !important;
+}
+.samdav1 h2 {
+    margin-top: 10px !important;
+    font-size: 18px !important;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sam {
+    background-color:  black ;
+    color: #ffffff !important;
+}
+.sam1 {
+    background-color: #444;
+    color: #ffffff !important;
+}
+.sam2 {
+    background-color:  #FFDFBF ;
+    color: #000000 !important;
+}
+.sam3 {
+    background-color: darkgrey ;
+    color: #000000 !important;
+}
+.item {
+    background-color: #FFDFBF !important;
+    color: black !important;
+}
+.item-content {
+    background-color:#FFDFBF !important;
+    color: black !important;
+}
+.item-body {
+    background-color:  #FFDFBF !important;
+    color: black !important;
+}
+/*.iframe-wrapper iframe {*/
+/*width: 100%;*/
+/*height: 100%;*/
+
+/*}*/
+.iframe-wrapper iframe {
+
+    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    -ms-touch-action: none;
+
+}
+.item-input {
+    background-color: #ffffff !important;
+    color: black !important;
+}

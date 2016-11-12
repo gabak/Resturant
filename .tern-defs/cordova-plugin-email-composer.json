@@ -1,0 +1,51 @@
+{
+    "!name": "cordova-plugin-email-composer",
+    "!define": {
+        "!modules": {
+            "EmailComposer": {
+                "aliases": {
+                    "gmail": "string"
+                },
+                "getDefaults": "fn() -> !modules.EmailComposer.getDefaults.!ret",
+                "isAvailable": "fn(app: string, callback: string, scope: ?)",
+                "open": "fn(options: ?|!modules.EmailComposer.open.!0, callback: ?, scope: ?)",
+                "addAlias": "fn(alias: ?, package: ?)",
+                "isServiceAvailable": "fn()",
+                "openDraft": "fn()",
+                "mergeWithDefaults": "fn(options: !modules.EmailComposer.open.!0) -> !modules.EmailComposer.mergeWithDefaults.!ret",
+                "createCallbackFn": "fn(callbackFn: string, scope: ?) -> fn()",
+                "registerCallbackForScheme": "fn(fn: fn())"
+            }
+        },
+        "!modules.EmailComposer.getDefaults.!ret": {
+            "app": "string",
+            "subject": "string",
+            "body": "string",
+            "to": "[?]",
+            "cc": "[?]",
+            "bcc": "[?]",
+            "attachments": "[?]",
+            "isHtml": "bool",
+            "chooserHeader": "string"
+        },
+        "!modules.EmailComposer.open.!0": {
+            "isHtml": "bool",
+            "app": "string",
+            "subject": "string",
+            "body": "string",
+            "chooserHeader": "string",
+            "to": "!modules.EmailComposer.getDefaults.!ret.to",
+            "cc": "!modules.EmailComposer.getDefaults.!ret.cc",
+            "bcc": "!modules.EmailComposer.getDefaults.!ret.bcc",
+            "attachments": "!modules.EmailComposer.getDefaults.!ret.attachments"
+        },
+        "!modules.EmailComposer.mergeWithDefaults.!ret": {},
+        "!modules.EmailComposer.createCallbackFn.!ret": "fn()"
+    },
+    "!plugin-version": "0.8.3",
+    "cordova": {
+        "plugins": {
+            "email": "!modules.EmailComposer"
+        }
+    }
+}

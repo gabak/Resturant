@@ -1,0 +1,102 @@
+<ion-view view-title="Panevino">
+
+    <ion-content class="has-footer sam2">
+
+        <!-- slideshow -->
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true">
+            <ion-slide>
+                <img class="full-image" src="img/slide-3.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img class="full-image" src="img/slide-1.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img class="full-image" src="img/slide-2.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img class="full-image" src="img/slide-4.jpg">
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="list">
+            <a class="item item-thumbnail-left item-icon-right samdav" href="#" ui-sref="app.launch">
+                <img src="img/lunch.jpg">
+                <h2>Launch Menu</h2>
+                <i class="icon ion-ios-arrow-forward"></i>
+            </a>
+            <a class="item item-thumbnail-left item-icon-right samdav" href="#" ui-sref="app.dinner">
+                <img src="img/dinner.jpg">
+                <h2 class="samdav">Dinner Menu</h2>
+                <i class="icon ion-ios-arrow-forward"></i>
+            </a>
+            <a class="item item-thumbnail-left item-icon-right samdav" href="#" ui-sref="app.wine">
+                <img src="img/wine_a.jpg">
+                <h2>Wine List </h2>
+                <i class="icon ion-ios-arrow-forward"></i>
+            </a>
+        </div>
+        <button ui-sref="app.book" class="button button-full button-assertive">
+        Menu Reservation
+        </button>
+        <div class="list">
+
+            <a class="item item-icon-left " href="#" onclick="window.open('https://web.facebook.com/panevinoaddison/', '_blank', 'location=no'); return false;">
+                <i class="icon ion-social-facebook"></i>
+               Facebook
+            </a>
+
+            <a class="item item-icon-left" href="#" onclick="window.open('https://twitter.com/PaneVinoAddison/', '_blank', 'location=no'); return false;">
+                <i class="icon ion-social-twitter"></i>
+               Twitter
+            </a>
+
+            <a class="item item-icon-left" href="#" onclick="window.open('https://www.instagram.com/panevinoaddison/', '_blank', 'location=no'); return false;">
+                <i class="icon ion-social-instagram"></i>
+               Instagram
+            </a>
+            <a class="item item-icon-left" href="#" onclick="window.open('https://plus.google.com/103761108180474278660', '_blank', 'location=no'); return false;">
+                <i class="icon ion-social-googleplus"></i>
+                GooglePlus
+            </a>
+        </div>
+    </ion-content>
+    <!--<div class="bar bar-subfooter bar-balanced">-->
+        <!--<div class="title">Footer</div>-->
+    <!--</div>-->
+    <div class="tabs bar-footer tabs-icon-top sam">
+        <a href="" ui-sref="app.new" class="tab-item">
+            <i class="icon ion-ios-home"></i>
+            Home
+        </a>
+        <a href="#" ui-sref="app.about" class="tab-item">
+            <i class="icon ion-person"></i>
+            About Us
+        </a>
+
+        <a href="#" ui-sref="app.book" class="tab-item">
+            <i class="icon ion-ios-pie"></i>
+            Reservation
+        </a>
+        <a href="#" ui-sref="app.gal" class="tab-item">
+            <i class="icon ion-images"></i>
+            Gallery
+        </a>
+        <!--<a href="#" onclick="window.open('http://panevino.chefsmobileapps.com/gallery/', '_blank', 'location=no'); return false;"  class="tab-item">-->
+            <!--<i class="icon ion-images"></i>-->
+            <!--Gallery-->
+        <!--</a>-->
+        <a href="#" ui-sref="app.contact" class="tab-item">
+            <i class="icon ion-email"></i>
+           Contact
+        </a>
+        <!--<a href="#" onclick="window.open('https://www.facebook.com/thenicoleexperience/', '_blank', 'location=no'); return false;" class="tab-item">-->
+            <!--<i class="icon ion-social-facebook"></i>-->
+            <!--Facebook-->
+        <!--</a>-->
+        <!--<a href="#" onclick="window.open('https://www.instagram.com/thenicoleexperience/', '_blank', 'location=no'); return false;" class="tab-item">-->
+            <!--<i class="icon ion-social-instagram"></i>-->
+            <!--Instagram-->
+        <!--</a>-->
+
+    </div>
+</ion-view>
